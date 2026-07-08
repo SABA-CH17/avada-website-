@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./agenda_files/agenda.css" <title=""></head><body>Avada Website
+
+
+    <header class="header">
+        <div class="container">
+            <p class="evn"><b> envato </b> market</p>
+            <button class="btn1">Buy Now</button>
+        </div>
+        <nav class="navbar">
+
+        <div class="logo" style="
+    padding: 5px;
+">
+            <img src="./agenda_files/images.png" class="Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5500/agenda.html#">Avada</a></li>
+            <li><a href="http://127.0.0.1:5500/agenda.html#">Avada For</a></li>
+            <li><a href="http://127.0.0.1:5500/agenda.html#">Hosting</a></li>
+            <li><a href="http://127.0.0.1:5500/agenda.html#">Customization</a></li>
+            <li><a href="http://127.0.0.1:5500/agenda.html#">Resources</a></li>
+        </ul>
+
+        <button class="btn2" style="
+    padding: 10px 28px 10px 28px;
+    white-space: nowrap;
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
+">My Avada
+
+    </button></nav>
+
+</header>
+<section class="hero">
+
+    <div class="hero-image">
+        <img src="./agenda_files/photo-1454165804606-c3d57bc86b40.avif" alt="Hero Image">
+    </div>
+
+    <div class="hero-content">
+        <h4>Awada is for begineers</h4>
+        <h1>Launching A <br> Website Has <br> Never Been <br> Easier</h1>
+
+        <p>
+            Highly flexible, with an intuitive Drag &amp; Drop design interface <br> that allows you complete design freedom.
+        </p>
+
+        <button class="Btn3" style="
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: black;
+    color: white;
+">Buy Awada for $69 -&gt; </button>
+    </div>
+
+</section>
+
+<script>
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+
+</script>
+</body></html>
