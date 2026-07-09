@@ -441,7 +441,7 @@ body{
 }
 .customization{
     display: flex;
-    width:90%;
+    width:100%;
     justify-content: left;
     justify-content:space-around;
     flex-wrap:wrap;
